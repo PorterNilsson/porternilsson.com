@@ -1,5 +1,4 @@
-import { cn } from "cn";
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,16 +11,16 @@ export function Navbar() {
   return (
     <header>
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-        <NavLink to="/" className="text-2xl font-bold">
+        <Link to="/" className="text-2xl font-bold">
           Porter Nilsson
-        </NavLink>
+        </Link>
 
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink
-                render={<NavLink to="/bluemap" />}
-                className={cn(navigationMenuTriggerStyle(), "text-base")}
+                render={<Link to="/dashboard" className="text-base">BlueMap</Link>}
+                className={navigationMenuTriggerStyle()}
               >
                 BlueMap
               </NavigationMenuLink>
