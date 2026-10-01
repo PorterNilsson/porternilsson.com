@@ -1,3 +1,4 @@
+import { cn } from "cn";
 import { Link } from "react-router";
 import {
   NavigationMenu,
@@ -19,8 +20,8 @@ export function Navbar() {
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink
-                render={<Link to="/dashboard" className="text-base">BlueMap</Link>}
-                className={navigationMenuTriggerStyle()}
+                href="/bluemap"
+                className={cn(navigationMenuTriggerStyle(), "text-base")}
               >
                 BlueMap
               </NavigationMenuLink>
