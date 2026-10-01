@@ -8,7 +8,7 @@ import {
 
 export function Navbar() {
   return (
-    <header className="bg-white">
+    <header>
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-2">
         <NavLink to="/" className="text-lg font-bold">
           Porter Nilsson
